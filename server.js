@@ -10,7 +10,7 @@ const port = process.env.PORT || 5050; //environment valuable
 //: export PORT=5000/3838
 app.use((req, res, next) => {
     console.log('incoming request');
-    console.log(process.env.PORT);
+    console.log(port);
     
     //next is the original route request ie, /api/users
     next(); //=> send the user to the routes they requseted
