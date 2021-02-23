@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 //think of route handlers like PHP functions
-const port = process.env.PORT || 5050; //environment valuable
+const port = process.env.PORT || 5000; //environment valuable
 
 //this catches every route -  every time you change your location bar, this function reacts to it and intercepts the route request
 //: export PORT=5000/3838
