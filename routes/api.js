@@ -34,7 +34,7 @@ router.get("/movies", (req, res) => {//http://localhost:5050/api/movies
           // Handle error after the release.
           if (error) throw error;
 
-          res.json({results});
+          res.json(results);
         });
       });
 
