@@ -4,8 +4,8 @@ If you miss old movies, don't miss this site. Roku is a website devoted to old m
 `Still a work in progress`  <br>
 
 ## Server Settings
-1.  const port = process.env.PORT || 5000;  <br>
-2.  Database: <br>
+1.  const port = process.env.PORT || 5000
+2.  Database: 
 * user: "root"
 * password: "" 
 * host: "localhost"

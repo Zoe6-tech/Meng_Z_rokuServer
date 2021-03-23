@@ -1,6 +1,7 @@
 const express = require('express');
 //express router handles incoming requests and directs them where they need to go
 //like a traffic cop
+
 const app = express();
 
 //think of route handlers like PHP functions
@@ -16,8 +17,11 @@ app.use((req, res, next) => {
     next(); //=> send the user to the routes they requseted
 })
 
+// app.use("/", (req, res) => res.send("hit the api"));
+
 //use the API route file to handle API routes (/api/users, /api/:user/:id, etc)
 app.use("/api", require("./routes/api"));
+app.use("/ums", require("./routes/ums"));
 
 //run the app at the PORT
 app.listen(port, () => {
